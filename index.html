@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>9gag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/9gag.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">9gag</a>
+            
+            <button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Upload</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Posts -->
+    <div class="container" ng-app="">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="panel panel-default" ng-controller="GagCtrl">
+                    <div class="panel-body">
+                        <div class="page-header">
+                            <h3><strong>{{post.title}}</strong></h3>
+                            <p><small>{{post.statistics}}</small></p>
+                            <img class="gagimage" src="{{post.image}}" width="100%">
+                            <a class="btn btn-primary">Share on Facebook</a>
+                            <a class="btn btn-info">Tweet</a>
+                            <a class="btn btn-default">°°°</a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-body">
+                        <div class="page-header">
+                            <h3><strong>Rolling a joint</strong></h3>
+                            <p><small>7,934 points - 25 comments</small></p>
+                            <img class="gagimage" src="img/joint.jpg" width="100%">
+                            <a class="btn btn-primary">Share on Facebook</a>
+                            <a class="btn btn-info">Tweet</a>
+                            <a class="btn btn-default">°°°</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+</body>
+
+</html>
